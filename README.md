@@ -46,3 +46,17 @@ quando o applet é repintado.
 a execução.
 = public void destroy () - Chamado quando o applet
 está sendo removido da memória.
+
+## Exceções
+
+***O que são as exceções:***
+As exceções são maneiras que o programador tem de tratar o erro que pode acontecer durante a execução do programa, como por exemplo uma divisão por 0, etc. Pode ser utilizadas as exceções predefinidas do Java ou criar as próprias exceções
+- Claros 
+- Robustos 
+- Tolerantes a falhas
+
+***As palavras chave são:***
+- Throws Exception: deixa o codigo sobre o aviso que pode dar errado e gerar uma exceção
+- Try: envolve o bloco que pode pegar a exceção 
+- Catch: captura e trata uma exceção
+- Finally: código sempre executado independentemente de uma exceção ocorrer
