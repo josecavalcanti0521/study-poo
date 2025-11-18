@@ -60,3 +60,25 @@ As exceções são maneiras que o programador tem de tratar o erro que pode acon
 - Try: envolve o bloco que pode pegar a exceção 
 - Catch: captura e trata uma exceção
 - Finally: código sempre executado independentemente de uma exceção ocorrer
+
+## Concorrência ou Multithreading
+
+Multithreading é o ato de você dividir os processos em threads, onde cada thread é única e independente. Como por exemplo, um usuário em um site de e-commerce, cada usuário é um thread no computador que está rodando a aplicação. Trazendo a ideia de execução simultânea.
+
+Métodos:
+
+- public void run() -> executar uma thread
+- void start () - método que dispara a thread, chamando o
+método run ()
+- void sleep (int miliseconds) - método que especifica
+quanto tempo (em milisegundo) a thread deve “dormir”
+- boolean interrupt () - método que interrompe a thread
+- boolean isInterrupted () - método que retorna se a
+thread está ou não interrompida
+
+### Sincronização (synchronized)
+
+Um dos conceitos mais importantes em Multithreading é a sincronização.
+Como as threads compartilham memória, é preciso proteger dados críticos. O Java usa a palavra-chave synchronized para garantir que apenas uma thread por vez possa acessar um bloco de código ou método específico.
+
+Isso resolve o problema de condição de corrida, onde o resultado do programa depende da ordem aleatória em que as threads acessam e modificam os dados.
